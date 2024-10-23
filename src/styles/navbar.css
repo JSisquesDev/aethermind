@@ -1,0 +1,49 @@
+/* Estilos para la barra de navegación principal */
+.navbar {
+  @apply bg-blue-600 dark:bg-blue-900;
+}
+
+/* Contenedor principal de la barra de navegación */
+.navbar-container {
+  @apply flex flex-wrap items-center justify-between mx-auto px-4 py-2;
+}
+
+/* Estilos para el logo de la barra de navegación */
+.navbar-logo {
+  @apply flex items-center space-x-3;
+}
+
+/* Imagen del logo */
+.navbar-logo-image {
+  @apply h-8;
+}
+
+/* Texto del logo */
+.navbar-logo-text {
+  @apply self-center text-2xl font-semibold whitespace-nowrap text-white dark:text-blue-100;
+}
+
+/* Botón de alternancia para menú móvil */
+.navbar-toggle {
+  @apply inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 dark:text-blue-100 dark:hover:bg-blue-800 dark:focus:ring-blue-600;
+}
+
+/* Contenedor del menú de navegación */
+.navbar-menu {
+  @apply hidden w-full md:block md:w-auto;
+}
+
+/* Lista de enlaces de navegación */
+.navbar-links {
+  @apply font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0;
+}
+
+/* Estilos para los enlaces individuales */
+.navbar-link {
+  @apply block py-2 px-3 text-white rounded hover:bg-blue-700 md:hover:bg-transparent md:hover:text-blue-200 md:p-0 dark:text-blue-100 dark:hover:bg-blue-800 dark:hover:text-white md:dark:hover:bg-transparent;
+}
+
+/* Estilos para el enlace activo */
+.navbar-link-active {
+  @apply text-white bg-blue-700 md:bg-transparent md:text-blue-200 md:p-0 dark:text-white;
+}

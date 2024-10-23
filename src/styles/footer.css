@@ -1,0 +1,69 @@
+/* Estilos para el pie de página principal */
+.footer {
+  @apply bg-blue-600 dark:bg-blue-900;
+}
+
+/* Contenedor principal del pie de página */
+.footer-container {
+  @apply w-full p-8 mx-auto;
+}
+
+/* Contenedor superior del pie de página */
+.footer-top {
+  @apply sm:flex sm:items-center sm:justify-between;
+}
+
+/* Estilos para el logo del pie de página */
+.footer-logo {
+  @apply flex flex-col items-center mb-4 sm:mb-0 sm:flex-row sm:space-x-3 sm:rtl:space-x-reverse;
+}
+
+/* Imagen del logo en el pie de página */
+.footer-logo-image {
+  @apply h-8 mb-2 sm:mb-0;
+}
+
+/* Texto del logo en el pie de página */
+.footer-logo-text {
+  @apply text-center sm:text-left text-2xl font-semibold whitespace-nowrap text-white dark:text-blue-100;
+}
+
+/* Lista de enlaces en el pie de página */
+.footer-links {
+  @apply flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-white sm:mb-0 sm:justify-end dark:text-blue-100;
+}
+
+/* Elementos individuales de la lista de enlaces */
+.footer-link-item {
+  @apply hover:underline me-4 md:me-6 hover:text-blue-200 dark:hover:text-white;
+}
+
+/* Contenedor de iconos de redes sociales */
+.footer-social-icons {
+  @apply flex justify-center mt-4 space-x-6;
+}
+
+/* Estilos para los enlaces de redes sociales */
+.footer-social-link {
+  @apply text-white hover:text-blue-200 dark:text-blue-100 dark:hover:text-white;
+}
+
+/* Estilos para los iconos de redes sociales */
+.footer-social-icon {
+  @apply w-6 h-6;
+}
+
+/* Línea divisoria en el pie de página */
+.footer-divider {
+  @apply my-6 border-blue-400 sm:mx-auto dark:border-blue-600 lg:my-8;
+}
+
+/* Texto de derechos de autor */
+.footer-copyright {
+  @apply block text-sm text-white text-center dark:text-blue-100;
+}
+
+/* Enlace en el texto de derechos de autor */
+.footer-copyright-link {
+  @apply hover:underline hover:text-blue-200 dark:hover:text-white;
+}
