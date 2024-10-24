@@ -1,0 +1,8 @@
+/* Estilos para el componente FormDescription */
+.form-description {
+  @apply my-6;
+}
+
+.form-description-text {
+  @apply text-gray-700 dark:text-gray-300 text-base sm:text-lg md:text-xl lg:text-2xl;
+}

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer-top">
             <Link href="/" className="footer-logo">
               <Image src="/next.svg" className="footer-logo-image" alt="Flowbite Logo" width={180} height={38} />
-              <span className="footer-logo-text">Aethermind</span>
+              <span className="footer-logo-text">{process.env.APP_NAME}</span>
             </Link>
             <ul className="footer-links">
               <li>
@@ -51,7 +51,12 @@ const Footer = () => {
               <span className="sr-only">TikTok</span>
               <FaTiktok className="footer-social-icon" />
             </Link>
-            <Link href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+            <Link
+              href="https://www.linkedin.com/in/javier-plaza-sisqu%C3%A9s-b79367172/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-social-link"
+            >
               <span className="sr-only">LinkedIn</span>
               <FaLinkedin className="footer-social-icon" />
             </Link>

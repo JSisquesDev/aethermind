@@ -1,0 +1,24 @@
+/* Estilos para el formulario */
+.form-container {
+  @apply w-full md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto;
+}
+
+.form {
+  @apply bg-white dark:bg-gray-800 shadow-md rounded px-4 pt-4 pb-6 mb-2;
+}
+
+.form-input-container {
+  @apply mb-4;
+}
+
+.form-input-label {
+  @apply block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2;
+}
+
+.form-input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-300 leading-tight;
+}
+
+.form-button-container {
+  @apply flex items-center justify-between;
+}
