@@ -11,6 +11,8 @@ import { validateForm, validateField } from '@/util/validateForm';
 import { FaEnvelope } from 'react-icons/fa6';
 import logMessage from '@/util/logger';
 import sendEmail from '@/util/emailManager';
+import axiosInstance from '@/config/axiosConfig';
+import fetchManager from '@/util/fetchManager';
 
 /**
  * Componente de formulario de contacto.
@@ -57,7 +59,8 @@ const ContactForm = () => {
    */
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    sendEmail(formData.email, `Mensaje de ${formData.name}`, formData.message);
+    console.log('Form submitted', formData);
+    fetchManager.post('/contact', formData);
   };
 
   /**

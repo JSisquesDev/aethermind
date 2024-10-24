@@ -21,11 +21,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/curriculum" className="footer-link-item">
-                  Curriculum
-                </Link>
-              </li>
-              <li>
                 <Link href="/experience" className="footer-link-item">
                   Experiencia
                 </Link>

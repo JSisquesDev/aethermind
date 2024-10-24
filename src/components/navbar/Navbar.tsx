@@ -35,8 +35,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="navbar-link" aria-current="page" onClick={closeMenu}>
-                  Sobre mi
+                <Link href="/services" className="navbar-link" aria-current="page" onClick={closeMenu}>
+                  Servicios
                 </Link>
               </li>
               <li>
@@ -45,8 +45,8 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/skills" className="navbar-link" aria-current="page" onClick={closeMenu}>
-                  Habilidades
+                <Link href="/about" className="navbar-link" aria-current="page" onClick={closeMenu}>
+                  Sobre nosotros
                 </Link>
               </li>
               <li>

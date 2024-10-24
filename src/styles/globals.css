@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  @apply h-full p-4 sm:p-8 md:p-12 lg:p-16;
+  @apply h-full p-0;
 }
 
 /* Importaciones */
@@ -36,3 +36,4 @@ main {
 @import '@/styles/checkbox.css';
 @import '@/styles/title.css';
 @import '@/styles/formDescription.css';
+@import '@/styles/serviceSection.css';

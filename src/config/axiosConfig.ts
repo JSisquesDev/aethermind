@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 /**
  * Crea una instancia de Axios configurada.
@@ -9,11 +9,10 @@ import axios from "axios";
  * un tiempo de espera y encabezados predeterminados para realizar solicitudes HTTP.
  */
 const axiosInstance = axios.create({
-  baseURL:
-    process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4224/api/v1",
+  baseURL: process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3000/api',
   timeout: 5000,
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 });
 
