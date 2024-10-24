@@ -9,6 +9,8 @@ import CustomTitle from '@/components/customTitle/CustomTitle';
 import FormDescription from '@/components/form/formDescription/FormDescription';
 import { validateForm, validateField } from '@/util/validateForm';
 import { FaEnvelope } from 'react-icons/fa6';
+import logMessage from '@/util/logger';
+import sendEmail from '@/util/emailManager';
 
 /**
  * Componente de formulario de contacto.
@@ -55,7 +57,7 @@ const ContactForm = () => {
    */
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted', formData);
+    sendEmail(formData.email, `Mensaje de ${formData.name}`, formData.message);
   };
 
   /**
@@ -90,7 +92,7 @@ const ContactForm = () => {
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit} className="form">
-        <CustomTitle text="Contactanos" icon={<FaEnvelope />} />
+        <CustomTitle text="Contacto" icon={<FaEnvelope />} />
         <FormDescription text="Dejanos un mensaje y te responderemos lo antes posible" />
         <CustomInput label="Nombre" type="text" name="name" value={formData.name} onChange={handleChange} required />
         {errors.name && <p className="error-text">El nombre es obligatorio</p>}
