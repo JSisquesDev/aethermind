@@ -1,0 +1,24 @@
+/* Contenedor del input personalizado */
+.custom-input-container {
+  @apply my-4;
+}
+
+/* Estilos del input personalizado */
+.custom-input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-900 dark:text-gray-100 leading-tight dark:bg-gray-800;
+}
+
+/* Estilos para el input con error */
+.custom-input-error {
+  @apply border-red-500 dark:border-red-700;
+}
+
+/* Mensaje de error del input */
+.custom-input-error-message {
+  @apply text-red-500 dark:text-red-700 text-xs italic;
+}
+
+/* Etiqueta del input personalizado */
+.custom-input-label {
+  @apply block text-gray-900 dark:text-gray-100 font-bold mb-2;
+}

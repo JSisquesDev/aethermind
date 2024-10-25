@@ -1,0 +1,72 @@
+/* Estilos del botón personalizado */
+.custom-button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+}
+
+@media (min-width: 640px) {
+  .custom-button {
+    @apply py-3 px-5;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-button {
+    @apply py-4 px-6;
+  }
+}
+
+/* Estilos del botón deshabilitado */
+.custom-button:disabled {
+  @apply bg-gray-400 cursor-not-allowed;
+}
+
+/* Estilos del botón primario */
+.custom-button-primary {
+  @apply bg-green-500 hover:bg-green-700;
+}
+
+@media (min-width: 640px) {
+  .custom-button-primary {
+    @apply py-3 px-5;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-button-primary {
+    @apply py-4 px-6;
+  }
+}
+
+/* Estilos del botón secundario */
+.custom-button-secondary {
+  @apply bg-yellow-500 hover:bg-yellow-700;
+}
+
+@media (min-width: 640px) {
+  .custom-button-secondary {
+    @apply py-3 px-5;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-button-secondary {
+    @apply py-4 px-6;
+  }
+}
+
+/* Estilos del botón de alerta */
+.custom-button-alert {
+  @apply bg-red-500 hover:bg-red-700;
+}
+
+@media (min-width: 640px) {
+  .custom-button-alert {
+    @apply py-3 px-5;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-button-alert {
+    @apply py-4 px-6;
+  }
+}
