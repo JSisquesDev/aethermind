@@ -1,0 +1,22 @@
+/* .custom-title: 
+   - Aplica estilos de fuente en negrita
+   - Color de texto gris oscuro en modo claro y gris claro en modo oscuro
+   - Tamaños de texto que varían según el tamaño de la pantalla (base, sm, md, lg)
+   - Alinea el texto a la izquierda */
+.custom-title {
+  @apply font-bold text-gray-800 dark:text-gray-300 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-left;
+}
+
+/* .icon: 
+   - Aplica un margen a la derecha
+   - Tamaños de texto que varían según el tamaño de la pantalla (base, sm, md, lg) */
+.icon {
+  @apply mr-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+}
+
+/* .custom-title-container: 
+   - Aplica un diseño de flexbox en fila
+   - Alinea los elementos al centro */
+.custom-title-container {
+  @apply flex flex-row items-center mb-4 sm:mb-6 md:mb-7 lg:mb-8;
+}

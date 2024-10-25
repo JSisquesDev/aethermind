@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  @apply m-0 p-0;
+}
+
+main {
+  @apply h-full p-0;
+}
+
+p {
+  @apply mb-2 text-sm sm:mb-3 sm:text-base md:mb-4 md:text-lg lg:mb-5 lg:text-xl text-gray-700 dark:text-gray-300 text-justify;
+}
+
+/* Importaciones */
+@import '@/styles/navbar.css';
+@import '@/styles/footer.css';
+@import '@/styles/privacyPolicy.css';
+@import '@/styles/input.css';
+@import '@/styles/button.css';
+@import '@/styles/form.css';
+@import '@/styles/textArea.css';
+@import '@/styles/checkbox.css';
+@import '@/styles/title.css';
+@import '@/styles/formDescription.css';
+@import '@/styles/customSection.css';

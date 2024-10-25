@@ -1,0 +1,49 @@
+/* Estilos para el contenedor principal de la política de privacidad */
+.privacy-policy-container {
+  @apply max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8;
+}
+
+/* Estilos para el título principal */
+.privacy-policy-title {
+  @apply text-3xl font-bold mb-6 text-gray-800 dark:text-gray-200 sm:text-4xl lg:text-5xl;
+}
+
+/* Estilos para las secciones */
+.privacy-policy-section {
+  @apply mb-8 sm:mb-12;
+}
+
+/* Estilos para los títulos de las secciones */
+.privacy-policy-section-title {
+  @apply text-2xl font-semibold mb-4 text-gray-700 dark:text-gray-300 sm:text-3xl;
+}
+
+/* Estilos para el contenido de las secciones */
+.privacy-policy-section-content {
+  @apply text-base text-gray-600 dark:text-gray-400 leading-relaxed sm:text-lg;
+}
+
+/* Estilos para listas dentro del contenido */
+.privacy-policy-list {
+  @apply list-disc pl-6 mt-2 mb-4 sm:pl-8;
+}
+
+/* Estilos para los elementos de la lista */
+.privacy-policy-list-item {
+  @apply mb-2 sm:mb-3;
+}
+
+/* Estilos para enlaces dentro del contenido */
+.privacy-policy-link {
+  @apply text-blue-600 dark:text-blue-400 hover:underline;
+}
+
+/* Estilos para la sección de contacto */
+.privacy-policy-contact {
+  @apply bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mt-8 sm:p-6 lg:p-8;
+}
+
+/* Estilos para la fecha de actualización */
+.privacy-policy-update-date {
+  @apply text-sm text-gray-500 dark:text-gray-400 mt-6 sm:text-base;
+}
