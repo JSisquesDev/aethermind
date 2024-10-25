@@ -4,7 +4,7 @@
 }
 
 .form {
-  @apply bg-white dark:bg-gray-800 shadow-md rounded px-4 pt-4 pb-6 mb-0;
+  @apply shadow-md rounded px-4 pt-4 pb-6 mb-0;
 }
 
 .form-input-container {

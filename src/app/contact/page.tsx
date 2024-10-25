@@ -2,7 +2,7 @@
 
 import ContactForm from '@/components/form/contactForm/ContactForm';
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <main>
       <ContactForm />
@@ -10,4 +10,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

@@ -25,6 +25,10 @@ main {
   @apply h-full p-0;
 }
 
+p {
+  @apply mb-2 text-sm sm:mb-3 sm:text-base md:mb-4 md:text-lg lg:mb-5 lg:text-xl text-gray-700 dark:text-gray-300 text-justify;
+}
+
 /* Importaciones */
 @import '@/styles/navbar.css';
 @import '@/styles/footer.css';
@@ -36,4 +40,4 @@ main {
 @import '@/styles/checkbox.css';
 @import '@/styles/title.css';
 @import '@/styles/formDescription.css';
-@import '@/styles/serviceSection.css';
+@import '@/styles/customSection.css';

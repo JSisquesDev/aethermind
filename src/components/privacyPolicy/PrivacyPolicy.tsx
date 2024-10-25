@@ -11,11 +11,13 @@ import Cookies from '@/components/privacyPolicy/cookies/Cookies';
 import ExternalLinks from '@/components/privacyPolicy/externalLinks/ExternalLinks';
 import Changes from '@/components/privacyPolicy/changes/Changes';
 import Contact from '@/components/privacyPolicy/contact/Contact';
+import CustomTitle from '../customTitle/CustomTitle';
+import { Fa4 } from 'react-icons/fa6';
 
 const PrivacyPolicy = () => {
   return (
     <div className="privacy-policy-container">
-      <h1 className="privacy-policy-title">Política de Privacidad</h1>
+      <CustomTitle text="Política de Privacidad" icon={<Fa4 />} />
       <Introduction />
       <InformationCollection />
       <MethodsOfCollection />

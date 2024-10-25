@@ -11,8 +11,11 @@ const roboto = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'JSisques Portfolio',
-  description: 'JSisques Portfolio desc',
+  title: process.env.NEXT_PUBLIC_APP_NAME,
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
+  icons: {
+    icon: '/icons/favicon.ico',
+  },
 };
 
 export default function RootLayout({
