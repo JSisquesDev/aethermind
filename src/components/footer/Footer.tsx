@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="footer-top">
             <Link href="/" className="footer-logo">
               <Image src="/next.svg" className="footer-logo-image" alt="Flowbite Logo" width={180} height={38} />
-              <span className="footer-logo-text">{process.env.APP_NAME}</span>
+              <span className="footer-logo-text">{process.env.NEXT_PUBLIC_APP_NAME}</span>
             </Link>
             <ul className="footer-links">
               <li>

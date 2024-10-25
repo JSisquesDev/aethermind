@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="navbar-container">
           <Link href="/" className="navbar-logo">
             <img src="https://flowbite.com/docs/images/logo.svg" className="navbar-logo-image" alt="Flowbite Logo" />
-            <span className="navbar-logo-text">Aethermind</span>
+            <span className="navbar-logo-text">{process.env.NEXT_PUBLIC_APP_NAME}</span>
           </Link>
           <button onClick={toggleMenu} type="button" className="navbar-toggle" aria-controls="navbar-default" aria-expanded={isMenuOpen}>
             <span className="sr-only">Abrir menu principal</span>
