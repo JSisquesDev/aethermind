@@ -1,0 +1,96 @@
+.custom-project-section {
+  @apply flex flex-col items-stretch justify-between p-4 md:p-8 gap-4;
+}
+
+@media (min-width: 768px) {
+  .custom-project-section {
+    @apply flex-row;
+    min-height: 40vh; /* Altura mínima para pantallas medianas */
+  }
+}
+
+@media (max-width: 640px) {
+  .custom-project-section {
+    min-height: 20vh; /* Altura mínima para pantallas pequeñas */
+  }
+}
+
+.custom-project-content {
+  @apply flex-1 flex flex-col justify-center;
+}
+
+.custom-project-title {
+  @apply text-3xl font-bold mb-3 md:mb-5 text-gray-900 dark:text-gray-100;
+}
+
+.custom-project-content h2 {
+  @apply text-2xl md:text-3xl font-bold mb-3 md:mb-5 text-gray-900 dark:text-gray-100;
+}
+
+.custom-project-content p {
+  @apply text-base md:text-lg text-gray-700 dark:text-gray-300;
+}
+
+.custom-project-image {
+  @apply flex-1 mb-5 md:mb-0 flex items-center justify-center order-first md:order-none;
+}
+
+.custom-project-image img {
+  @apply object-cover rounded-lg shadow-lg;
+}
+
+.custom-project-image-rounded {
+  @apply rounded-full;
+}
+
+.bg-primary {
+  @apply bg-white dark:bg-gray-800;
+}
+
+.bg-secondary {
+  @apply bg-green-600 dark:bg-green-900;
+}
+
+.custom-project-button {
+  @apply mt-5 px-8 py-3 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition duration-300 ease-in-out;
+}
+
+.custom-project-list {
+  @apply mt-5 list-disc list-inside;
+}
+
+.custom-project-list-item {
+  @apply text-base md:text-lg text-gray-700 dark:text-gray-300 mb-3;
+}
+
+.custom-project-icon {
+  @apply text-4xl md:text-5xl text-green-600 dark:text-green-400 mb-5;
+}
+
+.bg-primary .custom-project-title,
+.bg-primary .custom-project-description,
+.bg-primary .custom-project-content h2,
+.bg-primary .custom-project-content p,
+.bg-primary .custom-project-list-item {
+  @apply text-gray-900 dark:text-gray-100;
+}
+
+.bg-secondary .custom-project-title,
+.bg-secondary .custom-project-description,
+.bg-secondary .custom-project-content h2,
+.bg-secondary .custom-project-content p,
+.bg-secondary .custom-project-list-item {
+  @apply text-white dark:text-gray-200;
+}
+
+.bg-secondary .custom-project-button {
+  @apply bg-white text-green-600 hover:bg-gray-100;
+}
+
+.bg-secondary .custom-project-icon {
+  @apply text-white dark:text-gray-200;
+}
+
+.custom-project-separator {
+  @apply border-t border-gray-200 dark:border-gray-700 my-5;
+}

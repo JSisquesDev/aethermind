@@ -41,3 +41,5 @@ p {
 @import '@/styles/title.css';
 @import '@/styles/formDescription.css';
 @import '@/styles/customSection.css';
+@import '@/styles/customProjectSection.css';
+@import '@/styles/about.css';
